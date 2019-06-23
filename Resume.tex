@@ -1,35 +1,11 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Professional CV
-% LaTeX Template
-% Version 2.0 (8/5/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Rishi Shah 
-%
-% Important note:
-% This template requires the resume.cls file to be in the same directory as the
-% .tex file. The resume.cls file provides the resume style used for structuring the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
-\documentclass{resume} % Use the custom resume.cls style
+\documentclass{resume}
 \usepackage{hyperref}
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-\name{Vishnu Sashank Dorbala} % Your name
-\address{Website: \href{https://vdorbala.github.io}{https://vdorbala.github.io}} % Your address
-%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
-\address{(+91)7743875800 \\ \href{mailto:vdorbala@gmail.com}{vdorbala@gmail.com}} % Your phone number and email
-
+\name{Vishnu Sashank Dorbala}
+\address{Website: \href{https://vdorbala.github.io}{https://vdorbala.github.io}}
+\address{(+91)7743875800 \\ \href{mailto:vdorbala@gmail.com}{vdorbala@gmail.com}}
 \usepackage{ifthen}
 % % from https://tex.stackexchange.com/questions/209627/how-to-disable-list-in-the-rsubsection
 % \newenvironment{rSubsection}[4]{% 4 input arguments - company name, year(s) employed, job title and location
@@ -47,13 +23,10 @@
 
 \begin{document}
 \noindent%
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
 
 \begin{rSection}{Research Interests}
 
-Robot Perception, Computer Vision, Machine Learning, Human-Robot Interaction, Social \& Assistive Robotics, Reinforcement Learning, Visual Servoing.
+Robotics, Computer Vision, Machine Learning, Autonomous Navigation, Human-Robot Interaction, Social \& Assistive Robotics, Reinforcement Learning, Visual Servoing.
 \end{rSection}
 
 \begin{rSection}{Education}
@@ -75,13 +48,10 @@ Softwares \ & Robot Operating System (RoS), Gazebo, RviZ
 \end{tabular}
 
 \end{rSection}
-%--------------------------------------------------------------------------------
-%    Projects And Seminars
-%-----------------------------------------------------------------------------------------------
 
 \begin{rSection}{Research Experiences \& Projects}
 
-\begin{rSubsection}{Center for Visual Information Technology, IIIT, Hyderabad}{Sept 2017 - Present}{Research Fellow under Prof. C.V. Jawahar}{}
+\begin{rSubsection}{Center for Visual Information Technology, IIIT, Hyderabad}{Sept 2017 - April 2019}{Research Fellow under Prof. C.V. Jawahar}{}
 
 {\textbullet \hspace{0.1em} \textbf{Intelligent Wheelchair Platform/Semi Autonomous Robot Assistant (SARA)}}
 
@@ -92,7 +62,7 @@ Softwares \ & Robot Operating System (RoS), Gazebo, RviZ
 Remodelled a standard power wheelchair for the purpose, by retrofitting it with a Kinect v2 for perception and a Sabertooth Motor driver for motion control.
 \item Used RoS along with RTABMAP and RviZ for deploying individual modules for mapping, re-localization, path planning, and navigation onto the platform. 
 \item Guided undergraduate honour students on developing modules for facial recognition, person following, object recognition and tracking, and an android application to utilize the platform.
-\item Platform aptly renamed SARA, short for Semi-Autonomous Robot Assistant, when the scope of the project expanded to investigate Human-Robot Interaction (HRI). Currently investigating a social robotics task on SARA, where the robot would travel along a corridor and identify suitable targets to interact with by analyzing their motion trajectories.
+\item Platform aptly renamed SARA, short for Semi-Autonomous Robot Assistant, when the scope of the project expanded to investigate Human-Robot Interaction (HRI). Currently investigating a social robotics task on SARA, where the robot would gain Social Intelligence by learning to take appropriate actions by analyzing images of how people interact in front of it.
 \end{list}
 
 {\textbullet \hspace{0.1em} \textbf{Deep Learning for Visual Servoing}}
@@ -103,31 +73,22 @@ Remodelled a standard power wheelchair for the purpose, by retrofitting it with 
 \item Conducted research on incorporating Deep Neural Networks for performing Image Based Visual Servoing (IBVS) in a corridor following task. Was jointly guided by \href{https://scholar.google.com/citations?user=U9dH-DoAAAAJ&hl=en}{Prof. C.V. Jawahar} and \href{https://scholar.google.com/citations?user=81UGxdYAAAAJ&hl=en}{Prof. A.H. Abdul Hafez}.
 \item Designed experiments for using CNNs to directly predict a velocity vector from a captured image to servo a wheelchair robot across a corridor.
 \item Used SARA as a testbed for performing practical corridor following experiments across different hallways in IIIT-H.
-\item A conference paper on this work is currently under review at the \textbf{International Conference on Robotics and Automation (ICRA)}, 2019.
+\item A paper on this work was accepted at the \textbf{International Conference on Intelligent Robots and Systems (IROS)}, 2019.
 \hfill
-(\href{https://vdorbala.github.io/pdf/ICRA_paper.pdf}{Paper}, \href{https://vdorbala.github.io/pdf/ICRA_video.mp4}{Video})
-\item Working on extending this project by incorporating an Imitation Learning setup to improve qualitative results.
+(\href{https://vdorbala.github.io/pdf/IROS_paper.pdf}{Paper}, \href{https://vdorbala.github.io/pdf/IROS_video.mp4}{Video})
+\item Part of this work was accepted into a Turkish national conference, SIU 2019.
+\hfill
+(\href{https://vdorbala.github.io/pdf/SIU2019.pdf}{Paper})
 \end{list}
 \hfill
-
-% {\textbullet \hspace{0.1em} \textbf{Extra-Curricular Activities}}
-
-% \vspace*{-0.2em}
-% \begin{list}{$\cdot$}{\leftmargin=1.2em}
-% \itemsep0em 
-% \item Conducted a workshop in IIIT-H's Computer Vision Summer School on 3D Vision and Structure for Motion. Created assignments to evaluate the participants' performance.
-% \item Designed and organized a hackathon on "Autonomous Navigation" for an AI/ML course for industry professionals held on campus. Used Gazebo to create simulations of an obstacle course. Wrote template code for the participants to plug in their CNN models for using images of signboards to autonomously navigate the track.
-% \end{list}
-
 \end{rSubsection}
-
 \begin{rSubsection}{Symbiosis International University, Pune}{June 2013 - June 2017}{Undergraduate Student}{}
 \item
 
 {\textbullet \hspace{0.1em} \textbf{Classifying Brain Tumor Mutations (BTech. Thesis)}}
 
 \vspace*{-0.2em}
-\begin{list}{$\cdot$}{\leftmargin=1em} % <- change identation here
+\begin{list}{$\cdot$}{\leftmargin=1em}
 \item The project was aimed at providing an efficient means for classifying brain tumor mutations using Image Processing, as an alternative to an invasive surgical procedure involved otherwise. Was actively mentored by \href{https://scholar.google.com/citations?hl=en&user=UdKti2kAAAAJ&view_op=list_works&sortby=pubdate}{Dr. Madhura Ingalhalikar}.
 \item Performed image texture analysis on brain tumor MRI scans using a tool called MaZda and extracted over 100 textural features. Adopted a Naive Bayes model for classification, after performing dimensionality reduction via Principal Component Analysis on the extracted features.
 \end{list}
@@ -135,7 +96,7 @@ Remodelled a standard power wheelchair for the purpose, by retrofitting it with 
 {\textbullet \hspace{0.1em} \textbf{ABU Robocon 2016}}
 
 \vspace*{-0.2em}
-\begin{list}{$\cdot$}{\leftmargin=1em} % <- change identation here
+\begin{list}{$\cdot$}{\leftmargin=1em}
 \item Led our university robotics team called "Symbotics" for 9 months in my junior year on constructing two differential drive inter-dependant (one driving the other using wind energy) robots for the national rounds of Robocon 2016, a prestigious international robotics competition.
 \item Conceptualized and constructed several different configurations for the robots, and designed circuitry for robot control, energy storage and sensor integration. 
 \item Conducted research by trial and error on optimizing the energy stored in a supercapacitor circuit on one of the robots that was harnessing energy captured from a wind source. Reached an adequately optimal state by introducing a circuit to appropriately switch between parallel and series configurations of the supercapacitor circuit by taking cues from an inertial sensor.
@@ -145,7 +106,7 @@ Remodelled a standard power wheelchair for the purpose, by retrofitting it with 
 {\textbullet \hspace{0.1em} \textbf{Datagram Transport Layer Security (DTLS) for IoT devices}}
 
 \vspace*{-0.2em}
-\begin{list}{$\cdot$}{\leftmargin=1em} % <- change identation here
+\begin{list}{$\cdot$}{\leftmargin=1em}
 \item Interned for 6 months at a startup called Graphene Semiconductors Inc., and worked on developing a library in embedded C for implementing DTLS on IoT devices.
 \item Wrote abstracted scripts for implementing cookie exchanges, handling endianness, Diffie-Hellman key exchange protocols and server side multi-threading.
 \end{list}
